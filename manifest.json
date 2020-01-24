@@ -1,0 +1,22 @@
+{
+    "manifest_version": 2,
+    "name": "Yuika",
+    "version": "0.0.0",
+    "browser_specific_settings": {
+        "gecko": {
+            "id": "yuika@zackguard.com"
+        }
+    },
+    "background": {
+        "scripts": ["background.js"]
+    },
+    "content_scripts": [{
+        "matches": ["<all_urls>"],
+        "js": ["content.js"]
+    }],
+    "permissions": [
+        "menus",
+        "storage",
+        "tabs"
+    ]
+}
